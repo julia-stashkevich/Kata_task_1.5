@@ -1,0 +1,134 @@
+/** @format */
+body{min-width: 320px;}
+.menu {
+  overflow-x: hidden;
+  background-color: rgba(248, 248, 248, 1);
+  height: 100vh;
+}
+.menu__header {
+  height: 56px;
+  color: rgba(126, 126, 130, 1);
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.menu__main {
+}
+.menu__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 32px;
+  margin-top: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+  min-width: 0;
+}
+.menu__button-company {
+  display: flex;
+  flex-shrink: 0;
+  width: 240px;
+  height: 72px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(234, 234, 234, 1) 1px solid;
+  border-radius: 6px;
+}
+
+.menu__button-view {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1b1c21;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  border: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+}
+.hidden {
+  display: none;
+}
+.menu__bustton-svg{
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+ }
+.rotated{
+  transform: rotate(180deg);
+  margin-bottom: 7px;
+  
+}
+
+ 
+.swiper {
+ 
+  }
+.swiper-wrapper{
+
+}
+.swiper-slide{
+
+}
+
+@media screen and (max-width: 320px) {
+  body {
+      overflow-x: visible; /* Разрешает содержимому выходить за границы по горизонтали */
+      /* Дополнительные стили здесь, если нужно */
+  }
+}
+@media (max-width: 320px) {
+
+  .menu__buttons {
+    gap: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 0px;
+    flex-wrap: nowrap;
+   
+  }
+  
+  .menu__button-view {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__buttons {
+    row-gap: 16px;
+    column-gap: 24px;
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+  .menu__button-company{
+    width: 224px;
+  }
+}
+@media (min-width:1120px){
+  .menu {
+    width: 1120px;
+    margin: 0px auto;
+  }
+}
